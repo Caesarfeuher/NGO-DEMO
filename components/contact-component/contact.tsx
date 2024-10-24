@@ -1,33 +1,33 @@
 "use client"; // Ensure this line is added for a client component
 
 import React, { useEffect, useState } from "react";
-import "leaflet/dist/leaflet.css";
-import L from "leaflet";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { LatLngExpression } from 'leaflet'; 
-import PlaceIcon from '@mui/icons-material/Place';
+// import "leaflet/dist/leaflet.css";
+// import L from "leaflet";
+// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+// import { LatLngExpression } from 'leaflet'; 
+// import PlaceIcon from '@mui/icons-material/Place';
 
 const Contact: React.FC = () => {
-  const [mapReady, setMapReady] = useState(false); // State to check if map is ready
+  // const [mapReady, setMapReady] = useState(false); // State to check if map is ready
 
-  useEffect(() => {
-    setMapReady(true); // Set map ready to true when component mounts
-  }, []);
+  // useEffect(() => {
+  //   setMapReady(true); // Set map ready to true when component mounts
+  // }, []);
 
-  const position: LatLngExpression = [7.3796, 3.9675]; // Example coordinates
+  // const position: LatLngExpression = [7.3796, 3.9675]; // Example coordinates
 
   // Set default icon for markers
-  const DefaultIcon = L.icon({
-    iconUrl: "/marker-icon.png", // Ensure you have a marker icon in your public folder
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowSize: [41, 41],
-  });
+  // const DefaultIcon = L.icon({
+  //   iconUrl: "/marker-icon.png", // Ensure you have a marker icon in your public folder
+  //   iconSize: [25, 41],
+  //   iconAnchor: [12, 41],
+  //   popupAnchor: [1, -34],
+  //   shadowSize: [41, 41],
+  // });
 
   // Apply the default icon to all markers
   useEffect(() => {
-    L.Marker.prototype.options.icon = DefaultIcon;
+    // L.Marker.prototype.options.icon = DefaultIcon;
   }, []);
 
   return (
@@ -44,9 +44,9 @@ const Contact: React.FC = () => {
             </p>
 
             {/* Map container */}
-            {mapReady && (
+            {/* {mapReady && ( */}
               <div className="mt-4">
-                <MapContainer center={position} zoom={13} style={{ height: "300px", width: "100%" }}>
+                {/* <MapContainer center={position} zoom={13} style={{ height: "300px", width: "100%" }}>
                   <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
@@ -64,9 +64,9 @@ const Contact: React.FC = () => {
                       </a>
                     </Popup>
                   </Marker>
-                </MapContainer>
+                </MapContainer> */}
               </div>
-            )}
+            {/* )} */}
           </div>
 
           {/* Right side with form */}
