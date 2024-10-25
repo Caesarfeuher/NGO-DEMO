@@ -138,38 +138,18 @@
 
 
 
-
 "use client"; // Ensure this line is added for a client component
 
-import React, { useEffect, useState } from "react";
+import React from "react";
+import dynamic from "next/dynamic";
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { LatLngExpression } from 'leaflet'; 
-import PlaceIcon from '@mui/icons-material/Place';
+// import Map from "../map-component/map";
+
+const MapWithNoSSR = dynamic(() => import('../map-component/map'), {
+  ssr: false, // This ensures the map is not rendered on the server
+});
 
 const Contact: React.FC = () => {
-  const [mapReady, setMapReady] = useState(false); // State to check if map is ready
-
-  // Move the position and DefaultIcon inside the useEffect
-  const position: LatLngExpression = [7.3796, 3.9675]; // Example coordinates
-
-  useEffect(() => {
-    setMapReady(true); // Set map ready to true when component mounts
-
-    // Set default icon for markers
-    const DefaultIcon = L.icon({
-      iconUrl: "/marker-icon.png", // Ensure you have a marker icon in your public folder
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowSize: [41, 41],
-    });
-
-    // Apply the default icon to all markers
-    L.Marker.prototype.options.icon = DefaultIcon;
-  }, []);
-
   return (
     <div className="min-h-screen bg-cover bg-center" style={{ backgroundImage: 'url("/contactimg.png")' }}>
       <div className="flex items-center justify-center h-full bg-black bg-opacity-50">
@@ -183,30 +163,8 @@ const Contact: React.FC = () => {
               Have questions about our services? We&apos;re here to help! Contact our team today.
             </p>
 
-            {/* Map container */}
-            {mapReady && (
-              <div className="mt-4">
-                <MapContainer center={position} zoom={13} style={{ height: "300px", width: "100%" }}>
-                  <TileLayer
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
-                  />
-                  <Marker position={position}>
-                    <Popup>
-                      Your Office Location.
-                      <br />
-                      <a
-                        href={`https://www.google.com/maps/dir/?api=1&destination=${position[0]},${position[1]}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Get Directions
-                      </a>
-                    </Popup>
-                  </Marker>
-                </MapContainer>
-              </div>
-            )}
+            {/* Map component */}
+            <MapWithNoSSR />
           </div>
 
           {/* Right side with form */}
