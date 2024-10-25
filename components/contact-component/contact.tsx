@@ -139,7 +139,6 @@
 
 
 
-
 "use client"; // Ensure this line is added for a client component
 
 import React, { useEffect, useState } from "react";
@@ -152,29 +151,27 @@ import PlaceIcon from '@mui/icons-material/Place';
 const Contact: React.FC = () => {
   const [mapReady, setMapReady] = useState(false); // State to check if map is ready
 
-  useEffect(() => {
-    // Check if we are in the browser
-    if (typeof window !== "undefined") {
-      setMapReady(true); // Set map ready to true when component mounts
-
-      // Set default icon for markers
-      const DefaultIcon = L.icon({
-        iconUrl: "/marker-icon.png", // Ensure you have a marker icon in your public folder
-        iconSize: [25, 41],
-        iconAnchor: [12, 41],
-        popupAnchor: [1, -34],
-        shadowSize: [41, 41],
-      });
-
-      // Apply the default icon to all markers
-      L.Marker.prototype.options.icon = DefaultIcon;
-    }
-  }, []);
-
+  // Move the position and DefaultIcon inside the useEffect
   const position: LatLngExpression = [7.3796, 3.9675]; // Example coordinates
 
+  useEffect(() => {
+    setMapReady(true); // Set map ready to true when component mounts
+
+    // Set default icon for markers
+    const DefaultIcon = L.icon({
+      iconUrl: "/marker-icon.png", // Ensure you have a marker icon in your public folder
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41],
+    });
+
+    // Apply the default icon to all markers
+    L.Marker.prototype.options.icon = DefaultIcon;
+  }, []);
+
   return (
-    // <div className="min-h-screen bg-cover bg-center" style={{ backgroundImage: 'url("/contactimg.png")' }}>
+    <div className="min-h-screen bg-cover bg-center" style={{ backgroundImage: 'url("/contactimg.png")' }}>
       <div className="flex items-center justify-center h-full bg-black bg-opacity-50">
         <div className="flex flex-col md:flex-row items-start mx-4 md:mx-16 py-8 md:py-16 w-full">
           {/* Left side with contact information */}
@@ -273,7 +270,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </div>
-    // </div>
+    </div>
   );
 };
 
