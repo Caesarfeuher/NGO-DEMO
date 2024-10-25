@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import SearchIcon from "@mui/icons-material/Search";
+import Image from "next/image";
 
 interface NewsProps {
   limit?: number;
@@ -28,10 +29,10 @@ const News: React.FC<NewsProps> = ({ limit, largeCards, isHomePage }) => {
       link: "/newslink2",
     },
     {
-      title: "Landmarks Limited Announces Partnership",
+      title: "School Outreach",
       date: "1st July, 2024",
       summary:
-        "Landmarks Limited is pleased to announce a new partnership with Access Global, a leading brand in the industry. This collaboration will allow...",
+        "Visited a secondary school to educate them on general hygiene with concentration on the girl child.",
       image: "/news3.png",
       link: "/newslink3",
     },
@@ -99,9 +100,6 @@ const News: React.FC<NewsProps> = ({ limit, largeCards, isHomePage }) => {
         </h2>
         {!isHomePage && (
           <>
-            <p className="mt-2 text-center font-figtree font-normal text-base md:text-lg leading-normal md:leading-[30.6px] text-[#00170A]">
-              Stay updated on industry trends and Landmarks Limited news.
-            </p>
             <div className="flex flex-col md:flex-row justify-center mt-4 gap-4">
               <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden w-full max-w-md">
                 <SearchIcon className="text-gray-500 ml-3" />
@@ -133,10 +131,12 @@ const News: React.FC<NewsProps> = ({ limit, largeCards, isHomePage }) => {
                 isHomePage ? "h-48 md:h-60 lg:h-72" : "h-36 md:h-48 lg:h-60"
               } mb-4 rounded-lg overflow-hidden`}
             >
-              <img
+              <Image
                 src={article.image}
                 alt="News"
-                className="object-cover h-full w-full"
+                // className="object-cover h-full w-full"
+                width={300}
+                height={100}
               />
             </div>
             <div className="flex flex-col flex-grow">

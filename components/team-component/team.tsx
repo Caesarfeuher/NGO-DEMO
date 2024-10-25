@@ -55,22 +55,8 @@ const Team: React.FC = () => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className="relative bg-white rounded-lg border border-gray-200 p-4 flex flex-col items-center text-center"
-            >
-              <Image
-                className="w-full h-60  mb-4 rounded-lg"
-                src={member.image}
-                width={240}
-                height={240}
-                alt={`Team Member ${index + 1}`}
-              />
-              <h3 className="text-lg font-medium text-gray-900">
-                {member.name}
-              </h3>
-              <p className="text-sm text-gray-500">{member.title}</p>
-            </div>
+            <div key={index}className="relative bg-white rounded-lg border border-gray-200 p-4 flex flex-col items-center text-center"> <Image  className=" h-60  mb-4 rounded-lg" objectFit="contain" src={member.image}  width={300}  height={300}  alt={`Team Member ${index + 1}`}/> <h3 className="text-lg font-medium text-gray-900">{member.name}</h3><p className="text-sm text-gray-500">{member.title}</p></div>
+            
           ))}
         </div>
       </div>
@@ -79,3 +65,9 @@ const Team: React.FC = () => {
 };
 
 export default Team;
+
+
+
+
+
+<div className="w-full md:w-1/2 h-[50vh] relative" style={{backgroundImage: "url(/pretonialogo.png)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}> </div>

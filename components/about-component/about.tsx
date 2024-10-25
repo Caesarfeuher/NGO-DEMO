@@ -1,163 +1,3 @@
-// import Tabs from "../tabs-component/tab";
-// import Image from "next/image";
-
-
-// export default function About() {
-//     return (
-//         <>
-//         {/* Top Section */}
-//         <section className="relative h-[50vh] bg-gray-800 text-white overflow-y-scroll">
-//           <div className="z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
-//             <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold mt-4 mb-4 leading-tight text-[#F9FAFB] font-aeonik">Our Story.</h1>
-//             <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-8 bg:max-w-2xl leading-[30.6px] text-[#F9FAFB] font-figtree">
-//             In a small town far from the bustling cities, where opportunities were scarce and hope seemed distant, Pretoni Humanitarian Outreach 
-//             arrived with passion and a mission to transform lives. Through skills training, micro-finance, education, healthcare, and women&rsquo;s 
-//             empowerment, Pretoni helped the community become self-sufficient. Guided by values of compassion, integrity, and collaboration, the 
-//             organization focused on creating lasting, sustainable change. Pretoni believes that everyone, no matter their background, deserves the
-//              opportunity to thrive, and they work to make this vision a reality in the world&rsquo;s most forgotten corners.
-//             </p>
-//           </div>
-//           <Image
-//             src="/heroimg.png" // Replace with the actual path to your image
-//             alt="Hero background"
-//             layout="fill"
-//             objectFit="cover"
-//             objectPosition="center"
-//             className="z-0 opacity-40"
-//           />
-//         </section>
-  
-//         {/* Sections */}
-//         <div className="py-0">
-//           {/* Section 1 */}
-//           <div className="flex flex-col md:flex-row md:items-center">
-//             {/* Image div */}
-//             <div className="w-full md:w-1/2 h-[50vh] relative">
-//               <Image
-//                 src="/heroimg.png"
-//                 alt="Mall Advertising"
-//                 layout="fill"
-//                 objectFit="cover"
-//                 className="absolute inset-0 w-full h-full"
-//               />
-//             </div>
-//             {/* Write-up div */}
-//             <div
-//               className="w-full md:w-1/2 h-[50vh] flex items-center bg-black bg-opacity-80 text-white"
-//               style={{ backgroundImage: "url(/maxsuriimg.png)" }}
-//             >
-//               <div className="p-4 md:p-0 md:px-4 md:text-center break-words text-sm md:text-base leading-tight overflow-hidden">
-//                 <h2 className="text-4xl font-bold md:text-2xl">
-//                 Maxsuri global
-//                 </h2>
-//                 <p>
-//                 An indigenous healthcare organization providing support to access quality organic herbs for Sustainable economic growth promoting 
-//                 healthy community 
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-  
-//           {/* Section 2 */}
-//           <div className="flex flex-col md:flex-row-reverse md:items-center">
-//             {/* Image div */}
-//             <div className="w-full md:w-1/2 h-[50vh] relative">
-//               <Image
-//                 src="/heroimg.png"
-//                 alt="Street Lampoles"
-//                 layout="fill"
-//                 objectFit="cover"
-//                 className="absolute inset-0 w-full h-full"
-//               />
-//             </div>
-//             {/* Write-up div */}
-//             <div
-//               className="w-full md:w-1/2 h-[50vh] flex items-center bg-black bg-opacity-50 text-white"
-//               style={{ backgroundImage: "url(/kedi.webp)"  }}
-//             >
-//               <div className="p-4 md:p-0 md:px-4 md:text-center break-words text-sm md:text-base leading-tight overflow-hidden">
-//                 <h2 className="text-4xl font-bold md:text-2xl">Kedi Healthcare Int'l</h2>
-//                 <p>
-                
-//                 Partner in healthcare initiatives, providing access to high-quality supplements and healthcare products.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-  
-//           {/* Section 3 */}
-//           <div className="flex flex-col md:flex-row md:items-center">
-//             {/* Image div */}
-//             <div className="w-full md:w-1/2 h-[50vh] relative">
-//               <Image
-//                 src="/heroimg.png"
-//                 alt="Mobile LED Truck"
-//                 layout="fill"
-//                 objectFit="cover"
-//                 className="absolute inset-0 w-full h-full"
-//               />
-//             </div>
-//             {/* Write-up div */}
-//             <div
-//               className="w-full md:w-1/2 h-[50vh] flex items-center bg-black bg-opacity-50 text-white"
-//               style={{ backgroundImage: "url(/flourish.webp)" }}
-//             >
-//               <div className="p-4 md:p-0 md:px-4 md:text-center break-words text-sm md:text-base leading-tight overflow-hidden">
-//                 <h2 className="text-4xl font-bold md:text-2xl">
-//                 Flourish Africa
-//                 </h2>
-//                 <p>
-//                  Supporter in business structuring and empowerment training.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-  
-//           {/* Section 4 */}
-//           <div className="flex flex-col md:flex-row-reverse md:items-center">
-//             {/* Image div */}
-//             <div className="w-full md:w-1/2 h-[50vh] relative">
-//               <Image
-//                 src="/heroimg.png"
-//                 alt="Mopol Mobile LED Truck"
-//                 layout="fill"
-//                 objectFit="cover"
-//                 className="absolute inset-0 w-full h-full"
-//               />
-//             </div>
-//             {/* Write-up div */}
-//             <div
-//               className="w-full md:w-1/2 h-[50vh] flex items-center bg-black bg-opacity-50 text-white"
-//               style={{ backgroundImage: "url()" }}
-//             >
-//               <div className="p-4 md:p-0 md:px-4 md:text-center break-words text-sm md:text-base leading-tight overflow-hidden">
-//                 <h2 className="text-4xl font-bold md:text-2xl">
-//                   Pretoni Farms Limited
-//                 </h2>
-//                 <p>
-//                   This platform caters to a dynamic audience especially because it
-//                   can be used to complement activation and life events political,
-//                   socio-cultural or sporting.This platform caters to a dynamic audience especially because it
-//                   can be used to complement activation and life events political,
-//                   socio-cultural or sportingThis platform caters to a dynamic audience especially because it
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//         <div>
-//     </div>
-//     <Tabs/>
-//       </>
-//     );
-//   }
-
-
-
-
-
-
-
 import Tabs from "../tabs-component/tab";
 import Image from "next/image";
 
@@ -185,16 +25,7 @@ export default function About() {
         {/* Section 1 */}
         <div className="flex flex-col md:flex-row md:items-center">
           {/* Image div */}
-          <div className="w-full md:w-1/2 h-[50vh] relative">
-            <Image
-              src="/pretonialogo.png"
-              alt="Mall Advertising"
-              width={100}
-              height={50}
-              objectFit="cover"
-              className="absolute inset-0 w-full h-full"
-            />
-          </div>
+          <div style={{backgroundImage: "url(/pretonialogo.png)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}className="w-full md:w-1/2 h-[50vh] relative"> </div>
           {/* Write-up div */}
           <div
             className="w-full md:w-1/2 h-[50vh] flex items-center text-white"
@@ -216,16 +47,7 @@ export default function About() {
         {/* Section 2 */}
         <div className="flex flex-col md:flex-row-reverse md:items-center">
           {/* Image div */}
-          <div className="w-full md:w-1/2 h-[50vh] relative">
-          <Image
-              src="/pretonialogo.png"
-              alt="Mall Advertising"
-              width={100}
-              height={50}
-              objectFit="cover"
-              className="absolute inset-0 w-full h-full"
-            />
-          </div>
+          <div style={{backgroundImage: "url(/pretonialogo.png)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}className="w-full md:w-1/2 h-[50vh] relative"> </div>
           {/* Write-up div */}
           <div
             className="w-full md:w-1/2 h-[50vh] flex items-center text-white"
@@ -245,16 +67,7 @@ export default function About() {
         {/* Section 3 */}
         <div className="flex flex-col md:flex-row md:items-center">
           {/* Image div */}
-          <div className="w-full md:w-1/2 h-[50vh] relative">
-          <Image
-              src="/pretonialogo.png"
-              alt="Mall Advertising"
-              width={100}
-              height={50}
-              objectFit="cover"
-              className="absolute inset-0 w-full h-full"
-            />
-          </div>
+         <div style={{backgroundImage: "url(/pretonialogo.png)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}className="w-full md:w-1/2 h-[50vh] relative"> </div>
           {/* Write-up div */}
           <div
             className="w-full md:w-1/2 h-[50vh] flex items-center text-white"
@@ -275,16 +88,7 @@ export default function About() {
         {/* Section 4 */}
         <div className="flex flex-col md:flex-row-reverse md:items-center">
           {/* Image div */}
-          <div className="w-full md:w-1/2 h-[50vh] relative">
-          <Image
-              src="/pretonialogo.png"
-              alt="Mall Advertising"
-              width={100}
-              height={50}
-              objectFit="fill"
-              className="absolute inset-0 w-full h-full"
-            />
-          </div>
+          <div style={{backgroundImage: "url(/pretonialogo.png)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}className="w-full md:w-1/2 h-[50vh] relative"> </div>
           {/* Write-up div */}
           <div
             className="w-full md:w-1/2 h-[50vh] flex items-center text-white"
