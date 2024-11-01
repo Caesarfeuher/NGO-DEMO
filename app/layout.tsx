@@ -43,25 +43,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // return (
-  //   <html lang="en">
-  //     <body
-  //       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-  //     >
-  //       {children}
-  //     </body>
-  //   </html>
-  // );
   return (
     <html lang="en">
-    <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <header>
-        <h1>Pretonia Humanitarian Outreach</h1>
-        <p>nurturing, empowering and improving lives</p>
-        <img src="/pretonialogo.png" alt="Pretonia Humanitarian Outreach Banner" width="100%" />
-      </header>
-      {children}
-    </body>
-  </html>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
+      </body>
+    </html>
   );
+  
 }
