@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
                 <Image
                   src="/pretonialogo.png"
                   alt="Logo"
-                  width={100}
+                  width={50}
                   height={30}
                   className="cursor-pointer"
                 />

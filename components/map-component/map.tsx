@@ -4,7 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { LatLngExpression } from "leaflet"; 
 
 const Map: React.FC = () => {
-  const position: LatLngExpression = [7.3796, 3.9675]; // Your coordinates
+  const position: LatLngExpression = [6.703460, 3.346820]; // Your coordinates
 
   useEffect(() => {
     // Set default icon for markers

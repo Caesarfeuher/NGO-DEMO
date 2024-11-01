@@ -18,7 +18,7 @@ const News: React.FC<NewsProps> = ({ limit = 3, largeCards = false, isHomePage =
       date: "October 13, 2024",
       summary:
         "PHO celebrated World Egg Day by distributing free eggs to student specifically to Good Day Primary School,  Olambe, Ifo LGA, Ogun, families, educating them on the nutritional benefits of eggs.",
-      image: "/news1.png",
+      image: "/worldeggday.jpeg",
       link: "/newslink1",
     },
     {
@@ -26,7 +26,7 @@ const News: React.FC<NewsProps> = ({ limit = 3, largeCards = false, isHomePage =
       date: "October 10, 2024",
       summary:
         'Organized a feeding program for homeless individuals, providing nutritious meals and basic hygiene kits during the Christmas holiday.',
-      image: "/news2.png",
+      image: "/greaterlight.jpeg",
       link: "/newslink2",
     },
     {
@@ -34,7 +34,7 @@ const News: React.FC<NewsProps> = ({ limit = 3, largeCards = false, isHomePage =
       date: "1st July, 2024",
       summary:
         "Landmarks Limited is pleased to announce a new partnership with Access Global, a leading brand in the industry. This collaboration will allow...",
-      image: "/news3.png",
+      image: "/womanfeeding.jpeg",
       link: "/newslink3",
     },
   ];
@@ -47,7 +47,7 @@ const News: React.FC<NewsProps> = ({ limit = 3, largeCards = false, isHomePage =
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {displayedArticles.map((article, index) => (
           <div key={index} className="bg-white rounded-lg border border-gray-200 p-4 flex flex-col">
-            <div className="bg-gray-300 flex items-center justify-center h-36 md:h-48 lg:h-60 mb-4 rounded-lg overflow-hidden">
+            <div className="bg-gray-300 flex items-center justify-center h-36 md:h-48 lg:h-80 mb-4 rounded-lg overflow-hidden">
               <img src={article.image} alt="News" className="object-cover h-full w-full" />
             </div>
             <div className="flex flex-col flex-grow">
@@ -55,11 +55,11 @@ const News: React.FC<NewsProps> = ({ limit = 3, largeCards = false, isHomePage =
               <p className="text-sm font-medium text-[#667185] leading-tight mb-2">{article.date}</p>
               <p className="text-sm font-medium text-[#667185] leading-tight mb-4 flex-grow">{article.summary}</p>
               <div className="flex justify-center mt-4">
-                <Link href={article.link}>
+                {/* <Link href={article.link}>
                   <button className="w-full text-xs md:text-sm text-white bg-[#01451E] font-semibold px-2 py-1 rounded hover:bg-green-700 transition">
                     Read more
                   </button>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function Outreach() {
     <>
       <section className="relative h-[50vh] sm:h-[50vh] bg-gray-800 text-white overflow-y-auto"  >
         <div className="z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold md:mt-8 mb-4 leading-tight text-[#F9FAFB] font-aeonik">
+          <h1 className="text-2xl sm:text-5xl md:text-6xl font-bold md:mt-8 mb-4 leading-tight text-[#F9FAFB] font-aeonik">
             Collaboration, yes. Competition, no.
           </h1>
           <p className="text-base sm:text-lg font-normal mb-8 max-w-2xl leading-[30.6px] text-[#F9FAFB] font-figtree">
@@ -94,7 +94,7 @@ export default function Outreach() {
       <section className="bg-white text-gray-800">
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between lg:gap-x-12">
           <div className="w-full lg:w-1/2 p-4">
-            <h2 className="text-3xl md:5xl font-bold mb-8 leading-[40px] bg:leading-[60px] text-primary900 font-aeonik">
+            <h2 className="text-2xl  font-bold mb-8 leading-[40px] bg:leading-[60px] text-primary900 font-aeonik">
                 The only place where we can share, collaborate and innovate together because we are peers, not competitors.
             </h2>
             <p className="text-[18px] font-[400] leading-[30.6px] text-[#00170A] font-figtree">

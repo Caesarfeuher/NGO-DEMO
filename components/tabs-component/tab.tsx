@@ -21,7 +21,7 @@ const Tabs = () => {
                 : "bg-orange-500 hover:bg-orange-400"
             } text-white`}
           >
-            <div className="flex justify-center items-center gap-3">
+            <div className="flex justify-center items-center md:gap-3 gap-5">
               <Image
                 src="/vision.png"
                 alt="title"
@@ -65,7 +65,7 @@ const Tabs = () => {
                 : "bg-orange-500 hover:bg-orange-400"
             } text-white`}
           >
-            <div className="flex justify-center items-center gap-3">
+            <div className="flex justify-center items-center md:gap-3 gap-2">
               <Image
                 src="/mission.png"
                 alt="title"
@@ -109,7 +109,7 @@ const Tabs = () => {
                 : "bg-orange-500 hover:bg-orange-400"
             } text-white`}
           >
-            <div className="flex justify-center items-center gap-3">
+            <div className="flex justify-center items-center md:gap-3 gap-7">
               <Image
                 src="/goals.png"
                 alt="title"
@@ -258,6 +258,7 @@ const Tabs = () => {
               fontSize: "20px",
               lineHeight: "34px",
               color: "#00170A",
+              textAlign: "left",
             }}
           >
             <ul className="flex flex-col sm:flex-row font-aeonik space-y-2 sm:space-y-0 sm:space-x-5">

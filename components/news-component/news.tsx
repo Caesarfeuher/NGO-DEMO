@@ -17,23 +17,23 @@ const News: React.FC<NewsProps> = ({ limit, largeCards, isHomePage }) => {
       date: "October 13, 2024",
       summary:
         "PHO celebrated World Egg Day by distributing free eggs to student specifically to Good Day Primary School,  Olambe, Ifo LGA, Ogun, families, educating them on the nutritional benefits of eggs.",
-      image: "/news1.png",
+      image: "/worldeggday.jpeg",
       link: "/newslink1",
     },
     {
       title: "Greater Light of Heaven Church",
       date: "October 10, 2024",
       summary:
-        'Organized a feeding program for homeless individuals, providing nutritious meals and basic hygiene kits during the Christmas holiday.',
-      image: "/news2.png",
+        'Hosted a comprehensive health and wellness awareness program alongside a women&rsquo;s empowerment initiative at the church.',
+      image: "/greaterlight.jpeg",
       link: "/newslink2",
     },
     {
-      title: "School Outreach",
+      title: "High School Outreach",
       date: "1st July, 2024",
       summary:
         "Visited a secondary school to educate them on general hygiene with concentration on the girl child.",
-      image: "/news3.png",
+      image: "/womanfeeding.jpeg",
       link: "/newslink3",
     },
     // {
@@ -118,27 +118,30 @@ const News: React.FC<NewsProps> = ({ limit, largeCards, isHomePage }) => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {displayedArticles.map((article, index) => (
+         
           <div
-            key={index}
-            className={`bg-white rounded-lg border border-gray-200 p-4 mx-2 ${
-              isHomePage
-                ? "w-full max-w-[calc(100%-16px)] h-auto"
-                : "w-full max-w-[384px] h-auto md:h-[370px]"
-            } flex flex-col`}
-          >
+          key={index}
+          className={`bg-white rounded-lg border border-gray-200 p-2 mx-2 ${
+            isHomePage
+              ? "w-full max-w-[calc(100%-16px)]"
+              : "w-full max-w-[384px] md:h-[500px]" // Increased card height
+          } flex flex-col`}
+        >
             <div
               className={`bg-gray-300 flex items-center justify-center ${
-                isHomePage ? "h-48 md:h-60 lg:h-72" : "h-36 md:h-48 lg:h-60"
+                isHomePage ? "h-48 md:h-60 lg:h-72 sm:h-[400px]" : "h-48 md:h-48 lg:h-60 sm:h-[400px]"
               } mb-4 rounded-lg overflow-hidden`}
             >
               <Image
                 src={article.image}
                 alt="News"
-                // className="object-cover h-full w-full"
+                className="object-cover h-full w-full"
                 width={300}
                 height={100}
+                
               />
             </div>
+            
             <div className="flex flex-col flex-grow">
               <h3 className="text-base md:text-lg font-normal text-[#000E06] leading-tight mb-2">
                 {article.title}

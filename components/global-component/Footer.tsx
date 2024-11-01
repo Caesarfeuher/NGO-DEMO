@@ -15,6 +15,7 @@ const Footer = () => {
               <li><Link href="/" className="hover:text-green-500">Mission</Link></li>
               <li><Link href="/" className="hover:text-green-500">Vision</Link></li>
               <li><Link href="/" className="hover:text-green-500">Team</Link></li>
+              <li><Link href="https://sdgs.un.org/goals" className="hover:text-green-500">SDG</Link></li>
             </ul>
           </div>
 
