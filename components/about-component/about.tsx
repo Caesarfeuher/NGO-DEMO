@@ -25,7 +25,7 @@ export default function About() {
         {/* Section 1 */}
         <div className="flex flex-col md:flex-row md:items-center">
           {/* Image div */}
-          <div style={{backgroundImage: "url(/pretonialogo.png)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}className="w-full md:w-1/2 h-[50vh] relative"> </div>
+          <div style={{backgroundImage: "url(/pretonilogo1.png)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}className="w-full md:w-1/2 h-[50vh] relative"> </div>
           {/* Write-up div */}
           <div
             className="w-full md:w-1/2 h-[50vh] flex items-center text-white"
@@ -47,7 +47,7 @@ export default function About() {
         {/* Section 2 */}
         <div className="flex flex-col md:flex-row-reverse md:items-center">
           {/* Image div */}
-          <div style={{backgroundImage: "url(/pretonialogo.png)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}className="w-full md:w-1/2 h-[50vh] relative"> </div>
+          <div style={{backgroundImage: "url(/pretonilogo1.png)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}className="w-full md:w-1/2 h-[50vh] relative"> </div>
           {/* Write-up div */}
           <div
             className="w-full md:w-1/2 h-[50vh] flex items-center text-white"
@@ -67,7 +67,7 @@ export default function About() {
         {/* Section 3 */}
         <div className="flex flex-col md:flex-row md:items-center">
           {/* Image div */}
-         <div style={{backgroundImage: "url(/pretonialogo.png)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}className="w-full md:w-1/2 h-[50vh] relative"> </div>
+         <div style={{backgroundImage: "url(/pretonilogo1.png)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}className="w-full md:w-1/2 h-[50vh] relative"> </div>
           {/* Write-up div */}
           <div
             className="w-full md:w-1/2 h-[50vh] flex items-center text-white"
@@ -92,7 +92,7 @@ export default function About() {
           {/* Write-up div */}
           <div
             className="w-full md:w-1/2 h-[50vh] flex items-center text-white"
-            style={{backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/flourish.webp)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}>
+            style={{backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/pretonifarm.png)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}>
             <div className="p-4 md:p-0 md:px-4 md:text-center break-words text-sm md:text-base leading-tight overflow-hidden">
               <h2 className="text-4xl font-bold md:text-2xl">Pretoni Farms</h2>
               <p>

@@ -23,14 +23,14 @@ const Footer = () => {
             <h2 className="font-aeonik font-medium text-20px leading-24px text-gray-100 md:mt-20 mb-4">Contact</h2>
             <ul className="font-figtree font-regular text-16px leading-27.2px text-gray-100">
               <li><Link href="mailto:info@landmarks.com" className="hover:text-green-500">admin@pretoniahumanitarianoutreach.com</Link></li>
-              <li><Link href="tel:+2348177164374" className="hover:text-green-500">+234 817 716 4374</Link></li>
-              <li><Link href="tel:+2348104914779" className="hover:text-green-500">+234 810 491 4779</Link></li>
+              <li><Link href="tel:+2348177164374" className="hover:text-green-500">+234 802 335 8536</Link></li>
+              <li><Link href="tel:+2348104914779" className="hover:text-green-500">+234 906 481 9451</Link></li>
             </ul>
             <div className="flex justify-center space-x-12 mt-4 md:justify-start">
-              <Link href="/facebook">
+              <Link href="https://www.facebook.com/profile.php?id=61566878039603&mibextid=kFxxJD">
                 <Image src="/facebooklogo.png" alt="Facebook" width={24} height={24} className="hover:text-green-500" />
               </Link>
-              <Link href="/instagram">
+              <Link href="https://www.instagram.com/pretoniahumanitarianoutreach?igsh=MXhrbzFoMTM0YmRidg==">
                 <Image src="/instalogo.png" alt="Instagram" width={24} height={24} className="hover:text-green-500" />
               </Link>
             </div>

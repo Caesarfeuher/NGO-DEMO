@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
           <Link href="/" legacyBehavior>
             <a className="hidden lg:block pl-4">
               <Image
-                src="/pretonialogo.png"
+                src="/pretonilogo1.png"
                 alt="Logo"
                 width={80}
                 height={50}
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
             <Link href="/" legacyBehavior>
               <a className="ml-0">
                 <Image
-                  src="/pretonialogo.png"
+                  src="/pretonilogo1.png"
                   alt="Logo"
                   width={50}
                   height={30}
