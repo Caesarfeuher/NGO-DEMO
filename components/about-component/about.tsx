@@ -92,7 +92,7 @@ export default function About() {
           {/* Write-up div */}
           <div
             className="w-full md:w-1/2 h-[50vh] flex items-center text-white"
-            style={{backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/pretonifarm.png)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}>
+            style={{backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/pretonifarmz.png)",backgroundSize: "contain",backgroundPosition: "center",backgroundRepeat: "no-repeat",}}>
             <div className="p-4 md:p-0 md:px-4 md:text-center break-words text-sm md:text-base leading-tight overflow-hidden">
               <h2 className="text-4xl font-bold md:text-2xl">Pretoni Farms</h2>
               <p>
