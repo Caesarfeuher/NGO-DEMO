@@ -6,19 +6,18 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <>
-      <section className="relative h-screen bg-gray-800 text-white">
+    <section className="flex justify-between">
+      <section className="w-1/2 relative h-screen bg-gray-800 text-white">
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 ">
           <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight text-[#F9FAFB] font-aeonik">
-              When Change Needs a Network
-            </h1>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight text-[#F9FAFB] font-aeonik">
-              Own The Streets.
+              When Change Needs a Network Own The Streets.
             </h1>
           </div>
           <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-8 max-w-2xl leading-[30.6px] text-[#F9FAFB] font-figtree">
-            When change needs a movement, own the streets! Rise up, take action, and lead the way. Together, we are the unstoppable force that
-            transforms communities and creates the future we believe in. Be bold. Be loud. Own the streets! The power to drive change is in our hands!
+          Welcome to Pretonia Humanitarian Outreach (PHO)! We're dedicated to uplifting grassroots communities through health, wellness, and 
+          economic empowerment. Explore our programs and join us in building a healthier, empowered future. Your support makes a lasting 
+          difference. Thank you for being part of our mission!
           </h3>
           <Link href="/give">
             <button className="w-full bg-orange-500 text-white font-bold py-2 px-6 rounded hover:bg-orange-400 transition-colors duration-300 mb-6">
@@ -30,10 +29,21 @@ export default function Hero() {
           src="/together.webp"
           alt="Hero background"
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
           objectPosition="center"
           className="z-0 opacity-20"
-        />
+        />  
+      </section>
+      <section className="w-1/2 relative">
+      <Image
+          src="/pretoniawelcome.jpeg"
+          alt="Hero background"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="top"
+          className="z-0 opacity-100"
+        />  
+      </section>
       </section>
       <br/>
       {/* <section className="relative h-screen bg-gray-800 text-white">
