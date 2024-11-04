@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
+
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState<string | null>(null);
@@ -22,7 +22,7 @@ const Tabs = () => {
             } text-white`}
           >
             <div className="flex justify-center items-center md:gap-3 gap-5">
-              <Image
+              <img
                 src="/vision.png"
                 alt="title"
                 width={20}
@@ -66,7 +66,7 @@ const Tabs = () => {
             } text-white`}
           >
             <div className="flex justify-center items-center md:gap-3 gap-2">
-              <Image
+              <img
                 src="/mission.png"
                 alt="title"
                 width={20}
@@ -110,7 +110,7 @@ const Tabs = () => {
             } text-white`}
           >
             <div className="flex justify-center items-center md:gap-3 gap-7">
-              <Image
+              <img
                 src="/goals.png"
                 alt="title"
                 width={20}
@@ -154,7 +154,7 @@ const Tabs = () => {
             } text-white`}
           >
             <div className="flex justify-center items-center gap-3">
-              <Image
+              <img
                 src="/values.png"
                 alt="title"
                 width={20}
@@ -261,7 +261,7 @@ const Tabs = () => {
               textAlign: "left",
             }}
           >
-            <ul className="flex flex-col sm:flex-row font-aeonik space-y-2 sm:space-y-0 sm:space-x-5">
+            <ul className="flex px-4 flex-col sm:flex-row font-aeonik space-y-2 sm:space-y-0 sm:space-x-5">
               <li>
                 <span className="font-bold text-xl">Integrity:</span>
                 <span className="text-base"> We are committed to transparency and ethical practices in all our endeavors.</span>
@@ -291,3 +291,4 @@ const Tabs = () => {
 };
 
 export default Tabs;
+

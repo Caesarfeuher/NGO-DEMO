@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
@@ -25,7 +24,7 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" legacyBehavior>
             <a className="hidden lg:block pl-4">
-              <Image
+              <img
                 src="/pretonilogo1.png"
                 alt="Logo"
                 width={80}
@@ -83,7 +82,7 @@ const Navbar: React.FC = () => {
           <div className="lg:hidden flex items-center justify-between w-full">
             <Link href="/" legacyBehavior>
               <a className="ml-0">
-                <Image
+                <img
                   src="/pretonilogo1.png"
                   alt="Logo"
                   width={50}
@@ -118,7 +117,7 @@ const Navbar: React.FC = () => {
                 <div className="bg-white">
                   <Link href="/about" legacyBehavior>
                     <a className="block px-4 py-2 text-gray-500 font-aeonik font-light text-[16px] hover:bg-orange-500 hover:text-white">
-                    Our Story & Partners 
+                      Our Story & Partners
                     </a>
                   </Link>
                   <Link href="/team" legacyBehavior>

@@ -1,5 +1,4 @@
 import Tabs from "../tabs-component/tab";
-import Image from "next/image";
 
 export default function About() {
   return (

@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -27,11 +26,11 @@ const Footer = () => {
               <li><Link href="tel:+2348104914779" className="hover:text-green-500">+234 906 481 9451</Link></li>
             </ul>
             <div className="flex justify-center space-x-12 mt-4 md:justify-start">
-              <Link href="https://www.facebook.com/profile.php?id=61566878039603&mibextid=kFxxJD">
-                <Image src="/facebooklogo.png" alt="Facebook" width={24} height={24} className="hover:text-green-500" />
+              <Link href="https://www.facebook.com/profile.php?id=61566878039603&mibextid=kFxxJD" aria-label="Facebook">
+                <img src="/facebooklogo.png" alt="Facebook" width={24} height={24} className="hover:text-green-500" />
               </Link>
-              <Link href="https://www.instagram.com/pretoniahumanitarianoutreach?igsh=MXhrbzFoMTM0YmRidg==">
-                <Image src="/instalogo.png" alt="Instagram" width={24} height={24} className="hover:text-green-500" />
+              <Link href="https://www.instagram.com/pretoniahumanitarianoutreach?igsh=MXhrbzFoMTM0YmRidg==" aria-label="Instagram">
+                <img src="/instalogo.png" alt="Instagram" width={24} height={24} className="hover:text-green-500" />
               </Link>
             </div>
           </div>
