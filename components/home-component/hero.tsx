@@ -8,7 +8,7 @@ export default function Hero() {
         {/* Left section with text overlay */}
         <section className="w-1/2 relative h-screen bg-gray-800 text-white">
           <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight text-[#F9FAFB] font-aeonik">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight text-[#F9FAFB] font-aeonik">
               When Change Needs a Network Own The Streets.
             </h1>
             <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-8 max-w-2xl leading-[30.6px] text-[#F9FAFB] font-figtree">
@@ -58,8 +58,9 @@ export default function Hero() {
             <img
               src="/nurse.webp"
               alt="Nurse"
-              className="rounded-lg shadow-lg object-cover mx-auto sm:w-[536px] sm:h-[567px]"
+              className="rounded-lg shadow-lg object-contain mx-auto "
               style={{ width: '536px', height: '567px' }}
+              
             />
           </div>
         </div>
