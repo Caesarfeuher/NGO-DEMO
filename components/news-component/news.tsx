@@ -35,6 +35,14 @@ const News: React.FC<NewsProps> = ({ limit, largeCards, isHomePage }) => {
       image: "/womanfeeding.jpeg",
       link: "/newslink3",
     },
+    {
+      title: "Grassroots Women In Business",
+      date: "22nd Nov, 2024",
+      summary:
+        "Women empowerment programme focused on educating women on health and business Ethics.",
+      image: "/grassroots.png",
+      link: "/newslink3",
+    },
   ];
 
   const displayedArticles = limit ? articles.slice(0, limit) : articles;

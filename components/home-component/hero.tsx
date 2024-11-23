@@ -82,7 +82,7 @@ export default function Hero() {
               Be the Difference.
             </h2>
             <p className="text-sm sm:text-base md:text-lg font-normal leading-[30.6px] text-[#00170A] font-figtree">
-              Taking action, no matter how small, to create positive change. It’s about stepping up, inspiring others, and making an impact in your community and beyond. Every choice you make, every effort you contribute, brings us closer to a healthier, more connected world. By being the difference, you help shape a future where everyone has the chance to thrive.
+              Taking action, no matter how small, to create positive change. It&rsquo;s about stepping up, inspiring others, and making an impact in your community and beyond. Every choice you make, every effort you contribute, brings us closer to a healthier, more connected world. By being the difference, you help shape a future where everyone has the chance to thrive.
             </p>
           </div>
         </div>

@@ -5,11 +5,11 @@ export default function About() {
     <>
       {/* Top Section */}
       <section className="relative h-[100vh] sm:h-[50vh] bg-gray-800 text-white overflow-y-scroll bg-cover bg-center" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/nature.png)" }} >
-  <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
+  <div className="relative z-10 flex flex-col items-center justify-center text-left px-4 sm:px-6 lg:px-8">
     <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold mt-4 mb-4 leading-tight text-[#F9FAFB] font-aeonik">
       Our Story.
     </h1>
-    <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-8 max-w-2xl leading-[30.6px] text-[#F9FAFB] font-figtree">
+    <p className="text-sm l font-normal mb-8 max-w-2xl leading-[30.6px] text-[#F9FAFB] font-figtree">
       In a small town far from the bustling cities, where opportunities were scarce and hope seemed distant, Pretoni Humanitarian Outreach 
       arrived with passion and a mission to transform lives. Through skills training, micro-finance, education, healthcare, and women&rsquo;s 
       empowerment, Pretoni helped the community become self-sufficient. Guided by values of compassion, integrity, and collaboration, the 
